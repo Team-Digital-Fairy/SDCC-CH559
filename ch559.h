@@ -116,6 +116,7 @@ SFR(ROM_ADDR_H, 0x85);
 SFR(ROM_ADDR_L, 0x84);
 SFR16(ROM_ADDR, 0x84);
 
+
 // Port Reg
 SFR(XBUS_SPEED, 0xFD);
 SFR(XBUS_AUX, 0xA2);
@@ -124,9 +125,45 @@ SFR(PIN_FUNC, 0xCE);
 SFR(P4_CFG, 0xC7);
 SFR(P5_IN, 0xC7); // READ
 SFR(PORT_CFG, 0xC6);
-
 SFR(P0_PU, 0xC5);
 SFR(P0_DIR, 0xC4);
+
+SFR(P4_PU, 0xC3);
+SFR(P4_DIR, 0xC2);
+SFR(P4_IN, 0xC1);
+SFR(P4_OUT, 0xC0);
+
+SFR(P3_PU, 0xBF);
+SFR(P3_DIR, 0xBE);
+
+SFR(P2_PU, 0xBD);
+SFR(P2_DIR, 0xBC);
+
+SFR(P1_PU, 0xBB);
+SFR(P1_DIR, 0xBA);
+
+SFR(P1_IE, 0xB9);
+SFR(P3, 0xB0);
+SFR(P2, 0xA0);
+SFR(P1, 0x90);
+SFR(P0, 0x80);
+
+
+// Timer 0 and 1 Registers
+SFR(TH1, 0x8D);
+SFR(TH0, 0x8C);
+SFR(TL1, 0x8B);
+SFR(TL0, 0x8A);
+SFR(TMOD, 0x89);
+SFR(TCON, 0x88);
+
+// UART0 Reg
+SFR(SBUF, 0x99);
+SFR(SCON, 0x98);
+
+
+
+
 
 
 
